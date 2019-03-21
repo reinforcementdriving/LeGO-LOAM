@@ -6,7 +6,7 @@ This repository contains code for a lightweight and ground optimized lidar odome
 ## Dependency
 
 - [ROS](http://wiki.ros.org/ROS/Installation) (tested with indigo and kinetic)
-- [gtsam](https://bitbucket.org/gtborg/gtsam) (Georgia Tech Smoothing and Mapping library)
+- [gtsam](https://github.com/borglab/gtsam/releases) (Georgia Tech Smoothing and Mapping library, 4.0.0-alpha2)
 
 ## Compile
 
@@ -72,6 +72,10 @@ Notes: The parameter "/use_sim_time" is set to "true" for simulation, "false" to
 rosbag play *.bag --clock --topic /velodyne_points /imu/data
 ```
 Notes: Though /imu/data is optinal, it can improve estimation accuracy greatly if provided. Some sample bags can be downloaded from [here](https://github.com/RobustFieldAutonomyLab/jackal_dataset_20170608) If your IMU frame doesn't align with Velodyne frame, use of IMU data will cause significant drift.
+
+## New data-set
+
+This dataset, [Stevens data-set](https://github.com/TixiaoShan/Stevens-VLP16-Dataset), is captured using a Velodyne VLP-16, which is mounted on an UGV - Clearpath Jackal, on Stevens Institute of Technology campus. The VLP-16 rotation rate is set to 10Hz. This data-set features over 20K scans and many loop-closures. 
 
 ## Cite *LeGO-LOAM*
 
