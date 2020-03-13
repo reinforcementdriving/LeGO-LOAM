@@ -1,24 +1,30 @@
 <?xml version="1.0"?>
 <package>
-  <name>lego_loam</name>
+  <name>lego_loam_bor</name>
   <version>1.0.0</version>
-  <description>LeGO-LOAM from IROS 2018</description>
+  <description>Fork of LeGO-LOAM</description>
 
-  <maintainer email="xxx@xxx.xxx">Tixiao Shan</maintainer>
+  <maintainer email="davide.faconti@gmail.com">Davide Faconti</maintainer>
 
   <license>BSD</license>
 
   <author >Tixiao Shan</author>
+  <author >Davide Faconti</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>roscpp</build_depend>
   <run_depend>roscpp</run_depend>
+
   <build_depend>rospy</build_depend>
   <run_depend>rospy</run_depend>
+
   <build_depend>ros_bridge</build_depend>
   <run_depend>ros_bridge</run_depend>
-  
+
+  <build_depend>rosbag_storage</build_depend>
+  <run_depend>rosbag_storage</run_depend>
+
   <build_depend>tf</build_depend>
   <run_depend>tf</run_depend>
 
